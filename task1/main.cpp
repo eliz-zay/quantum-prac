@@ -96,4 +96,8 @@ int main(int argc, char* argv[]) {
     ofstream file("time.csv", ios::app);
     file << time << endl;
     file.close();
+
+    delete[] U;
+    delete[] a;
+    delete[] b;
 }
