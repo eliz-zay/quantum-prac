@@ -13,6 +13,6 @@ for q in range(3):
         elif q == 2:
             qNum = nqubits
 
-        for thread in [1, 2, 4, 8]:
-            bashCommand = f"./main {qNum} {nqubits} {thread}"
+        for thread in [1, 2, 4, 8, 64]:
+            bashCommand = "./main " + str(qNum) + " " +  str(nqubits) + " " + str(thread)
             runShell(bashCommand)
